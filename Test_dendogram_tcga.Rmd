@@ -32,4 +32,9 @@ dend %>%
    raise.dendrogram (-10) %>%  set("labels_cex",0.2)%>%
    plot(main = "One point lower", ylim = c(0,3))
 ```
+```{r}
+dend %>% set("leaves_pch", 19) %>% set("leaves_cex", 2) %>% set("leaves_col", 2) %>% # adjust the leaves
+   hang.dendrogram(hang_height = 1) %>%  set("labels_cex",0.1)%>%
+   plot(main = "Hanging a tree (but lower)",horiz=T)
+```
 
